@@ -16,9 +16,14 @@ protected:
     void paintEvent(QPaintEvent *);
     void mouseMoveEvent(QMouseEvent *);
     void mousePressEvent(QMouseEvent *);
-    
+
 private:
     QPoint point;
+
+public slots:
+    void slots_mouseEventReceived();
+signals:
+    void mouseEventReceived();
 };
 
 #endif // MAINWINDOW_H
